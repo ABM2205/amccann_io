@@ -1,5 +1,6 @@
-var http_ip = '127.0.0.1';
-var http_port = 8080;
+var http_ip = process.argv[2];
+var http_port = process.argv[3];
+console.log("starting server @", http_ip, ":", http_port);
 var http = require('http');
 
 var server = http.createServer(
