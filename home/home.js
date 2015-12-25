@@ -25,7 +25,7 @@ exports.get = function(request, response){
         "<br/>" +
             "My coding experience includes C++, PHP, Java, javascript, HTML, CSS and javascript.<br/>" +
         "<br/>" +
-            "server side i've used apache, nginx and jnode to develop small sites and applications.<br/>" +
+            "server side i've used apache, nginx and node.js to develop small sites and applications.<br/>" +
             "<br/>" +
         "</div>" +
         "</html>"
