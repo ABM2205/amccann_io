@@ -4,9 +4,6 @@ var file_system = require('fs');
 
 exports.get = function(request, response){
 
-	
-
-
 	//creates a string holding the request path in text
 	var path = url.parse(request.url, true).pathname;
 
@@ -17,8 +14,8 @@ exports.get = function(request, response){
 	else
 	{
 		response.writeHead(404);
-		response.end("<html> page doesnt exist </html>");
+		response.end("<html> page doesn't exist </html>");
 	}
 
-}
+};
 
