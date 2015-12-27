@@ -1,16 +1,22 @@
-
 var http_ip = process.argv[2];
 var http_port = process.argv[3];
 
-console.log("starting server @", http_ip, ":", http_port);
-var http = require('http');
+var express = require('express');
+var app = express();
 
-var server = http.createServer(
-	function(request, response){
+app.use(express.static('public'));
 
-		require('./router').get(request, response);
 
-	}); 
+app.get('/', function (req, res) {
+});
 
-//run the server
-server.listen(http_port, http_ip);
+app.get('/about', function (req, res) {
+	res.sendFile('./public/about.html', { root : __dirname});
+});
+
+var server = app.listen(http_port, function () {
+	var host = http_ip;
+	var port = http_port;
+
+	console.log('amccann_io at http://%s:%s', host, port);
+});
