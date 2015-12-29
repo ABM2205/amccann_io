@@ -1,5 +1,9 @@
 //
    Created by anthony on 12/26/2015.
+mixin button(text, link)
+    a(href = link)
+        .menubutton text
+
 
 .menu
-    p hello i live
+    +button('home')
