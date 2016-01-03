@@ -1,9 +1,9 @@
 //
    Created by anthony on 12/26/2015.
-mixin button(text, link)
-    a(href = link)
-        .menubutton text
+include button
 
 
 .menu
-    +button('home')
+    +button('home','/')
+    +button('projects','/projects')
+
