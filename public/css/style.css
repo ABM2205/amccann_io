@@ -1,8 +1,12 @@
-@import url("reset.css");
+@import url("/css/reset.css");
 
 *{
     background-color:#93C5C7;
     color:#3C8386;
+}
+
+.white{
+    color: white;
 }
 
 .textblock{

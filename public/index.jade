@@ -5,13 +5,14 @@ doctype html
 html
     head
         title Anthony McCann's Homepage
-        link(rel='stylesheet', href='../css/style.css', type='text/css' )
+        link(rel='stylesheet', href='/css/style.css', type='text/css' )
     body
         include menubar
         .textblock
             h1
-                |Hello, Im Anthony McCann, a computer science Student and student web developer.
+                |Hello <span class = 'white'> #{user_ip}</span>,
+                |Im Anthony McCann, a senior in computer science and student web developer.
                 br
                 br
-                |I have experience coding in C++, Java, Javascript, PHP, as well as a few other languages,
-                |deployed basic applications on apache, nginx and node.js servers.
+                |I have experience coding in C++, Java, Javascript, PHP, as well as a few other languages.
+                |Apache, nginx and node.js are all servers I have deployed on as well.
