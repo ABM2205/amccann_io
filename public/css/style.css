@@ -1,8 +1,10 @@
 @import url("/css/reset.css");
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,900|Sintony);
 
 *{
     background-color:#93C5C7;
     color:#3C8386;
+    font-family: 'Playfair Display', serif;
 }
 
 .white{
@@ -10,6 +12,7 @@
 }
 
 .textblock{
+    font-family: 'Sintony', sans-serif;
     background-color:inherit;
     color:inherit;
     float: left;
@@ -19,6 +22,8 @@
 }
 .textblock h1{
     font-size: 250%;
+    font-family: 'Sintony', sans-serif;
+
 }
 
 .menu{
@@ -42,9 +47,17 @@
     float: left;
      padding: 0;
      margin: 0;
-     width: 150px;
+     width: 200px;
      height:75px;
+    transition-property: background;
+    transition-duration: .07s;
+    transition-timing-function:ease;
  }
+
+.menubutton:hover{
+    color:cadetblue;
+    background-color:#93C5C7;
+}
 
 .menubutton span{
     float: right;
@@ -52,6 +65,7 @@
     left: -40%; /* or right 50% */
     top: 40%;
     text-align: left;
+    font-size: 150%;
     padding: 0;
     margin: 0;
     background-color:inherit;
@@ -65,7 +79,21 @@
     padding: 0;
     margin: 0;
     width: 200px;
-    height:35px;
+    height:55px;
+    transition-property: background;
+    transition-duration: .07s;
+    transition-timing-function:ease
+}
+
+.menubutton_2:hover{
+    color:#C9E5E7;
+    background-color:cadetblue;
+    position: relative;
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    height:55px;
 }
 
 .menubutton_2 span{
@@ -74,6 +102,7 @@
     left: -50%; /* or right 50% */
     top: 30%;
     text-align: left;
+    font-size: 150%;
     padding: 0;
     margin: 0;
     background-color:inherit;
@@ -92,3 +121,4 @@
     background-color:inherit;
 
 }
+
