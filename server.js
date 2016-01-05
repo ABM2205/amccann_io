@@ -39,7 +39,7 @@ app.get('/thissite', function (req, res) {
 
 //The 404 Route
 app.get('*', function(req, res){
-	res.send('Error: 404, page not found.', 404);
+	res.status(404).send('Error: 404, page not found.', 404);
 });// end Routes
 
 //start server
