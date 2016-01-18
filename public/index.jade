@@ -7,12 +7,40 @@ html
         title Anthony McCann's Homepage
         link(rel='stylesheet', href='/css/style.css', type='text/css' )
     body
-        include projects_sidebar
-        .textblock
-            h1
-                |Hello <span class = 'white'> #{user_ip}</span>,
-                |Im Anthony McCann, a senior in computer science and student web developer.
-                br
-                br
-                |I have experience coding in C++, Java, Javascript, PHP, as well as a few other languages.
-                |Apache, nginx and node.js are all servers I have deployed on as well.
+
+        script(src='js/jquery-1.11.3.js')
+        script(src='js/app.js')
+
+        #page
+            #center
+                #home_menu
+                    h1 me
+                    #bio_button(class='me_button')
+                        | bio
+                    #skills_button(class='me_button')
+                        | skills
+                #bio(class='me')
+                    h1
+                        | Hello <span class = 'white'> #{user_ip}</span>,
+                        | Im Anthony McCann, a senior in computer science and student web developer.
+                #skills(class='me')
+                    h1
+                        | Languages:
+                        | C++, java, javascript
+
+
+        noscript
+            include projects_sidebar
+            #textblockns
+                h1
+                    |Hello <span class = 'white'> #{user_ip}</span>,
+                    |Im Anthony McCann, a senior in computer science and student web developer.
+                    br
+                    br
+                    |I have experience coding in C++, Java, Javascript, PHP, as well as a few other languages.
+                    |Apache, nginx and node.js are all servers I have deployed on as well.
+
+        script.
+            $(document).ready(function () {
+                app();
+            });
