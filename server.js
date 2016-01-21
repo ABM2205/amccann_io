@@ -27,12 +27,10 @@ app.get('/', function (req, res) {
 	var ip = req.connection.remoteAddress;
 	var first_digit = ip.search(/\d/);
 	ip = ip.substr(first_digit, ip.length);
-
-
 	res.render('../public/index', {'user_ip':ip});
 
 });
-
+/*
 app.get('/projects', function (req, res) {
 	res.render('../public/projects');
 });
@@ -40,7 +38,7 @@ app.get('/projects', function (req, res) {
 app.get('/thissite', function (req, res) {
 	res.render('../public/this_site');
 });
-
+*/
 //The 404 Route
 app.get('*', function(req, res){
 	res.status(404).send('Error: 404, page not found.', 404);

@@ -13,32 +13,27 @@ html
 
         #page
             #center
+                #top_spacer
                 #home_menu
-                    h1 me
-                    #bio_button(class='me_button')
-                        | bio
+
+                    #bio_button(class='me_button' style="width: 159px; border: 0px;")
+                        | Anthony McCann
                     #skills_button(class='me_button')
                         | skills
+                    #work_button(class='me_button')
+                        | work
                 #bio(class='me')
-                    h1
+                    h1(class='white')
                         | Hello <span class = 'white'> #{user_ip}</span>,
                         | Im Anthony McCann, a senior in computer science and student web developer.
                 #skills(class='me')
-                    h1
+                    h1(class='white')
                         | Languages:
                         | C++, java, javascript
+                #work(class='me')
+                    #work_menu
 
 
-        noscript
-            include projects_sidebar
-            #textblockns
-                h1
-                    |Hello <span class = 'white'> #{user_ip}</span>,
-                    |Im Anthony McCann, a senior in computer science and student web developer.
-                    br
-                    br
-                    |I have experience coding in C++, Java, Javascript, PHP, as well as a few other languages.
-                    |Apache, nginx and node.js are all servers I have deployed on as well.
 
         script.
             $(document).ready(function () {
