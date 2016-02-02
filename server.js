@@ -22,6 +22,10 @@ app.get('/js/*', function(req, res){
 	res.sendFile(__dirname + '/public'+ req.path);
 });
 
+app.get('/img/*', function(req, res){
+	res.sendFile(__dirname + '/public'+ req.path);
+});
+
 app.get('/', function (req, res) {
 
 	var ip = req.connection.remoteAddress;

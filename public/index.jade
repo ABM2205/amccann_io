@@ -7,31 +7,40 @@ html
         title Anthony McCann's Homepage
         link(rel='stylesheet', href='/css/style.css', type='text/css' )
     body
-
         script(src='js/jquery-1.11.3.js')
         script(src='js/app.js')
+        #background
 
         #page
             #center
                 #top_spacer
                 #home_menu
-
                     #bio_button(class='me_button' style="width: 159px; border: 0px;")
                         | Anthony McCann
                     #skills_button(class='me_button')
                         | skills
                     #work_button(class='me_button' style="width:100px;")
                         | experience
-                    #Projects_button(class='me_button' style="width:100px;")
+                    #projects_button(class='me_button' style="width:100px;")
                         | projects
                 #bio(class='me')
-                    h1
+                    .info_text
                         | Hello <span class = 'white'> #{user_ip}</span>,
-                        | Im Anthony McCann, a senior in computer science and student web developer.
+                        | Im Anthony McCann. <br/><br/> I attend Old Domion University, where I study Computer Science.
+                        | <br/><br/> I am also interested in Web Development, UX, Music Composition, Audio software
+                        | and Digital Signal Processing.
                 #skills(class='me')
-                    h1
-                        | Languages:
+                    .info_text
+                        | <span class = 'white'>Languages:</span>
                         | C++, java, javascript
+                        <br/>
+                    .info_text
+                        |<span class = 'white'>Platforms:</span>
+                        |Windows, Linux, Nginx, Apache, node.js
+                        <br/>
+                    .info_text
+                        |<span class = 'white'>Tools:</span>
+                        |Ant, Vagrant, Git, Make
                 #work(class='me')
                     #work_hist(class="white whiteborder")
                         |work
@@ -76,10 +85,22 @@ html
                         #cs471
                             | CS 471
                             | Operating Systems
+                #projects(class='me')
+                    .info_text
+                        | <span class = 'white'>This Site:</span>
+                        br
+                        | This site was built using node.js as the backend, middleware and server platform.
+                        | I use express as a framework to handle routing and rendering the view.
+                        | Jade is used for templating and the frontend is,
+                        | javascript, jquery, html and css.
+                        br
+                        a(href="https://github.com/ABM2205/amccann_io") <span class = 'white'>github</span>
+
 
 
 
         script.
             $(document).ready(function () {
                 app();
+                //fishtank();
             });

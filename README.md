@@ -1,3 +1,3 @@
 # amccann_io
 
-building my first real website from the ground up
+experimenting with different tools and ways of presenting content.
